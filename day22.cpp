@@ -16,6 +16,6 @@ int main(){
         cout<<"fail"; 
     }
     return 0;
+}
   
 
-}
