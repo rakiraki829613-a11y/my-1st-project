@@ -2,10 +2,11 @@
 using namespace std;
 
 int main(){
-    int sum=0;
-    for(int i=0;i<=20;i++){
-        sum=sum+i;
+    int n=5;
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
     }
-    cout<<sum<<endl;
+    cout<<fact;
     return 0;
 }
