@@ -1,15 +1,18 @@
 #include<iostream>
 using namespace std;
 
-int mini(int a, int b){
-    if(a<b){
-        return a ;
-    }else{
-        return b;
+int digisum(int n){
+    int sum=0;
+    while(n>0){
+      int lastdigit=n%10;
+      n=n/10;
+      sum=sum+lastdigit;
     }
-}
-int main(){
-    cout<<mini(6,9)<<endl;
-    return 0;
-}
+      return sum; 
+    }
+    int main(){
+        cout<<digisum(7389)<<endl;
+        return 0;
+    }
+
     
