@@ -1,21 +1,12 @@
 #include<iostream>
 using namespace std;
 
+void sum(int a,int b){
+    int s=a+b;
+    return s;
+}
 int main(){
-    int marks;
-    cout<<"enter the marks: ";
-    cin >> marks;
-    if(marks>90){
-        cout<<" topper";
-    
-    }else if(marks>=80 && marks <=90 ){
-        cout<<"distiction";
-    }else if(marks>=35 && marks<80){
-        cout<<"pass";
-    }else{
-        cout<<"fail"; 
-    }
+    cout<<sum(45,89)<<endl;
     return 0;
 }
-  
 
