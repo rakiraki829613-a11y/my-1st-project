@@ -1,14 +1,15 @@
 #include<iostream>
 using namespace std;
 
-int SUM(int n){
-    int ha=0;
-    for(int i=1;i<=n;i++){
-        ha=ha+i;
+int mini(int a, int b){
+    if(a<b){
+        return a ;
+    }else{
+        return b;
     }
-    return ha;
 }
 int main(){
-    cout<<SUM(7)<<endl;
+    cout<<mini(6,9)<<endl;
     return 0;
 }
+    
