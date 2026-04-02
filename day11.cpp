@@ -2,8 +2,12 @@
 using namespace std;
 
 int main(){
-    int marks[5]={99,80,90,89,78};
+    int nums[]={4,3,32,2,1};
     int size=5;
-    cout<<sizeof(marks)<<endl;
-    return 0;
+    int smallest=INT16_MAX;
+    for(int i=0;i<size;i++){
+        smallest=min(nums[i],smallest);
+    }
+    cout<<"smallest ="<<smallest<<endl;
+return 0;
 }
