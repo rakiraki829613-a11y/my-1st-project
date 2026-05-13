@@ -1,20 +1,20 @@
 #include<iostream>
+#include<vector>
+#include<string>
 using namespace std;
-
-
-int main(){
-    int marks;
-    cout<<"enter the marks:";
-    cin>>marks;
-    if(marks>90){
-        cout<<"toppers";
-    }else if(marks>=80 && marks<90){
-        cout<<"distiction";
-    }else if(marks>=35){
-        cout<<"pass";
-    }else{
-        cout<<"fail";
+string longestcommenprefix(vector<string>&strs){
+    string ans=strs[0];
+    for(int i=0;i<strs.size();i++){
+        while(strs[i].find(ans)!=0){
+            ans.pop_back();
+        }
     }
-    return 0;
-
+    return ans;
 }
+int main(){
+    vector<string> strs={"flotyuio","flertyui","fiower"};
+    longestcommenprefix(strs);
+    return 0;
+}
+
+
